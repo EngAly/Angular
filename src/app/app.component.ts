@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
-
-
-
 export class AppComponent {
-  title = 'hello ali ahmed';
+    constructor(private translate: TranslateService) {
+        translate.setDefaultLang('ar');
+    }
+
+
+    useLanguage(language: string) {
+      this.translate.use(language);
+  }
+  
 }
