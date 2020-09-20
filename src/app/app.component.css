@@ -1,0 +1,13 @@
+ 
+.active {
+    font-size: 33px;
+}
+
+.links-distance a{
+    margin-right: 20px;
+    background-color:white;
+}
+
+.links-distance a:hover{
+     color: yellowgreen;
+}

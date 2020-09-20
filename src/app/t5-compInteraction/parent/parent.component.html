@@ -1,0 +1,9 @@
+<h1>Parent template</h1>
+
+<!-- pass data form parent <<name>> to child <<parentName>>
+   note that => app-child is child selector we send parent data in its 
+-->
+<h4>hello i'm message from child: <span [style.color]="'red'">{{message2parent}}</span></h4>
+
+
+<app-child (childEvent)="message2parent=$event" [parentName]="name"></app-child>

@@ -1,0 +1,15 @@
+<!-- test click event -->
+<button (click)="alertClick()">Click Me</button>
+
+<!-- change var value on click event -->
+<button (click)="changeMessageClick()">Click Me</button>
+<p>{{message}}</p>
+
+<!-- $event special angular variable -->
+<button (click)="clickWithVar($event)">Click Me</button>
+<br /><br />
+
+<!-- ///////////////////////////////////////// -->
+
+<input #myHandler type="text">
+<button (click)="getMessage1(myHandler)">Try Me</button>

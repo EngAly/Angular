@@ -1,0 +1,7 @@
+<h2>Child template</h2>
+
+<!-- we show parentName that its value had been gotten from parent component -->
+ <h3>normal => hello child my name is: <span [style.color]="'green'" id="inChild">{{parentName}}</span></h3>
+
+ <!-- make button to change childEvent's value  -->
+ <button (click)="getChildName()">sendMessage2Parent</button>

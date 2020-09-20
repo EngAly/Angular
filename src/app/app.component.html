@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+
+	<!-- app.component scratch -->
+	<!-- <div>
+		<h3>my first test angular framework</h3>
+		{{title}}
+	</div>
+	<hr /> -->
+
+
+	<!-- 	<!-- how to call show component content  inside another component -->
+	<!-- <div>
+		<h3>component inside another component</h3>
+		<t1-inside-app></t1-inside-app>
+	</div>
+	<hr /> -->
+
+
+
+	<!-- t2.bindings basics -->
+	<!-- <div>
+		<t2-binding-basics></t2-binding-basics>
+	</div>
+	<hr /> -->
+
+
+	<!-- t3.events -->
+	<!-- <div>
+		<t3-events></t3-events>
+	</div>
+	<hr /> -->
+
+
+	<!-- t4.data-binding -->
+	<!-- <div>
+		<t4-data-binding></t4-data-binding>
+	</div>
+	<hr /> -->
+
+
+	<!-- how to pass data from parent to child and reverse that is called component interaction -->
+	<!-- <div>
+		<app-parent></app-parent>
+	</div>
+	<hr /> -->
+
+
+	<!-- pipes how applay Pipes (|)to srting  and others for instance (string | lowercase) -->
+	<!-- <div>
+		<t6-pipes></t6-pipes>
+	</div>
+	<hr /> -->
+
+	<!-- how to use service in angular to seperate component about buesiness
+	logic note that componet consume the serive methods -->
+	<!-- <div>
+		<t7-service></t7-service>
+	</div>
+	<hr /> -->
+
+	<!-- http service get data from server side with http -->
+	<!-- <div>
+		<t8-http></t8-http>
+	</div> -->
+
+
+	<!-- routed views (view content) go here if you remove it will not show any content -->
+	<router-outlet></router-outlet>
+	<!-- all links that applay angular about them -->
+	<div class="links-distance container mt-4">
+		<a routerLink="/home" routerLinkActive="active">home</a> <a
+			routerLink="/page1" routerLinkActive="active">page1</a> <a
+			routerLink="/page2" routerLinkActive="active">page2</a> <a
+			routerLink="/departments" routerLinkActive="active">departments</a>
+	</div>
+<hr>
+	<!-- t10-departments2detais -->
+	<!-- we simaulate as market place we show all products then if user click in
+	each product user can get more details about this clicked snippet
+	product -->
+	<!-- <div>
+		<app-departments></app-departments>
+	</div> -->
+
+
+<!-- how to start with forms in angular -->
+<div>
+	<app-bind-data2model></app-bind-data2model>
+</div>
+<hr>
+
+</body>
+
+</html>
