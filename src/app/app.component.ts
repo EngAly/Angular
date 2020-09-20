@@ -1,19 +1,26 @@
-import {Component} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-    constructor(private translate: TranslateService) {
-        translate.setDefaultLang('ar');
-    }
+export class AppComponent implements OnInit {
+ 
+  isSaved: string;
 
-
-    useLanguage(language: string) {
-      this.translate.use(language);
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isSaved = 'success';
+      // this.isSaved = 'fail';
+    }, 1000);
   }
+
+
+  title = 'demo';
+
+
+
+
   
 }

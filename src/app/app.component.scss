@@ -1,0 +1,33 @@
+%animate_init {
+  position: absolute;
+  font-size: 18px;
+  width: 70%;
+  animation-duration: 1.5s;
+  animation-name: animate;
+}
+
+$color: #fff;
+@keyframes animate {
+  from {
+    background-color: white;
+  }
+  to {
+    @if $color == green {
+      background-color: green;
+    } @else if $color == red {
+      background-color: red;
+    }
+  }
+}
+
+.success {
+  @extend %animate_init;
+  $color: green;
+  background-color: green;
+}
+
+.fail {
+  @extend %animate_init;
+  $color: red;
+  background-color: red;
+}

@@ -1,9 +1,6 @@
-<label>{{ 'demo.title' | translate }}</label>
-<input type="text">
+<div class="container" [ngSwitch]="isSaved">
+  <div *ngSwitchCase="'success'" class="alert text-center success"> Data Added Successfully </div>
+  <div *ngSwitchCase="'fail'" class="alert text-center fail"> Data Not Added </div>
+ </div>
 
-
-<button (click)="useLanguage('en')">en</button>
-<button (click)="useLanguage('ar')">ar</button>
-
-
-<p [translate]="'demo.text'"></p>
+<div>test over div</div>
