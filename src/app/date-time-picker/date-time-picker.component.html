@@ -1,0 +1,5 @@
+<label class="example-input-wrapper">
+    <input placeholder="select time" [(ngModel)]="dateTime" [owlDateTimeTrigger]="dt" [owlDateTime]="dt">
+    <owl-date-time #dt></owl-date-time>
+</label>
+<h4>{{dateTime}}</h4>
